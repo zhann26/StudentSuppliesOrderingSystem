@@ -9,65 +9,137 @@ ChatGPT
 
 ---
 
+
+# IT415 - AI Usage Documentation
+
+## Project
+Student Supplies Ordering System
+
+## AI Tool Used
+ChatGPT
+
+---
+
 ## AI Interaction 1
 
 ### Prompt Used
-Give step by step to do this. We only use
-vs code and mysql for data base (if needed only).
+"Help me develop and improve the shopping cart
+functionality of my Student Supplies Ordering
+System using JavaScript.
+
+The system must allow customers to add products,
+increase or decrease quantities, remove items,
+and automatically calculate subtotals and totals.
+
+Please provide a simple implementation and
+explain how the functions work."
 
 ### Purpose
-To receive step-by-step guidance for developing
-the Student Supplies Ordering System using
-VS Code, HTML, CSS, and JavaScript.
+To develop a functional shopping cart that
+automatically updates product quantities,
+subtotals, and total amounts.
+
+I also wanted to understand how JavaScript
+functions manage shopping cart operations.
 
 ### AI Response
-ChatGPT provided a project structure and
-sample code for the product list, shopping cart,
-payment validation, and digital receipt.
+ChatGPT provided JavaScript functions for
+adding products, adjusting quantities,
+removing items, and calculating totals.
 
-It also explained how to run the application
-and use Git and GitHub.
+It also suggested creating a reusable
+getSubtotal() function to simplify the code
+and avoid repeated calculations.
 
 ### My Evaluation
-The response was useful and the main application
-features worked during testing.
+The AI response was correct and useful
+because the suggested functions helped
+improve shopping cart calculations.
 
-I verified the product calculations and
-successfully generated a digital receipt.
+I tested the system by adding products,
+changing quantities, and removing items.
+The subtotals and total updated correctly.
 
 ### Modifications Made
-I followed the development guidance and
-later improved the interface, subtotal
-calculations, payment validation, and
-digital receipt.
+I created a separate getSubtotal() function
+and updated the getTotal() and showCart()
+functions to use it.
+
+These changes improved code readability
+and simplified the subtotal calculations.
 
 ---
 
 ## AI Interaction 2
 
 ### Prompt Used
-[Paste the exact second prompt you submitted.]
+"Review and improve the cash payment validation
+and digital receipt functionality of my
+Student Supplies Ordering System using JavaScript.
+
+The system must reject empty, invalid, negative,
+and insufficient payments.
+
+It must calculate the correct change and
+generate a receipt with transaction details.
+
+Please suggest improvements and explain
+how the validation process works."
 
 ### Purpose
-[Explain what you wanted the AI to accomplish.]
+To improve the payment validation process
+and ensure that customers can only complete
+transactions with valid and sufficient payments.
+
+I also wanted to generate an accurate digital
+receipt containing the transaction details.
 
 ### AI Response
-[Summarize the AI's response.]
+ChatGPT explained how to validate cash
+payments before confirming a transaction.
+
+It suggested additional checks for unusually
+large amounts and payments containing more
+than two decimal places.
+
+It also provided guidance for displaying
+complete transaction information in
+the digital receipt.
 
 ### My Evaluation
-[Explain whether the response was correct,
-partially correct, or incorrect, and why.]
+The AI response was correct and helpful
+because it improved the payment validation
+and digital receipt functionality.
+
+I tested the system by purchasing two
+ballpens and one notebook.
+
+The total was PHP 59.00, and when I entered
+PHP 100.00, the system correctly calculated
+PHP 41.00 as change.
 
 ### Modifications Made
-[Describe what you actually changed in the code.
-If no changes were made, write None.]
+I added additional payment validation
+inside the confirmPayment() function.
+
+I also improved the digital receipt by
+adding a message reminding customers
+to keep their receipt for their records.
+
+These changes improved the reliability
+and usability of the application.
 
 ---
 
 ## Conclusion
-AI assistance was used to help develop,
-understand, test, and improve the Student
-Supplies Ordering System.
 
-The application was tested and changes
-were tracked using Git and GitHub.
+AI assistance helped me develop and improve
+the Student Supplies Ordering System.
+
+It helped me understand JavaScript functions,
+shopping cart calculations, payment validation,
+and digital receipt generation.
+
+I evaluated the AI suggestions, tested the
+application, and used Git and GitHub to
+track the improvements made to the project.
