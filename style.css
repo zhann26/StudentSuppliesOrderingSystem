@@ -57,6 +57,15 @@ button:hover {
   background: #173a73;
 }
 
+button:focus-visible {
+  outline: 3px solid #ffb703;
+  outline-offset: 3px;
+}
+
+.item span {
+  line-height: 1.5;
+}
+
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
