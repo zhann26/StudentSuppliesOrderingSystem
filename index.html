@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Supplies Ordering System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Supplies Ordering System</h1>
+
+    <section>
+      <h2>Product List</h2>
+      <div id="products"></div>
+    </section>
+
+    <section>
+      <h2>Shopping Cart</h2>
+      <div id="cart"></div>
+    </section>
+
+    <section>
+      <h2>Order Summary</h2>
+      <h3>Total: <span id="total">₱0.00</span></h3>
+    </section>
+
+    <section>
+      <h2>Cash Payment</h2>
+      <label for="cash">Amount Paid (₱)</label>
+      <input type="number" id="cash"
+             min="0" step="0.01"
+             placeholder="Enter cash amount">
+      <button id="payBtn">Confirm Payment</button>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section>
+      <h2>Digital Receipt</h2>
+      <div id="receipt">No completed transaction.</div>
+      <button id="newBtn">New Transaction</button>
+    </section>
+  </main>
+</body>
+</html>
