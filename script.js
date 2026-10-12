@@ -216,8 +216,10 @@ function generateReceipt(cash, change) {
     "Total: " + peso(getTotal()) + "\n" +
     "Cash: " + peso(cash) + "\n" +
     "Change: " + peso(change) + "\n\n" +
-    "PAYMENT CONFIRMED\nThank you for your purchase!";
-
+    "PAYMENT CONFIRMED\n" +
+    "Thank you for your purchase!\n" +
+    "Please keep this receipt for your records.";
+    
   document.getElementById("receipt").textContent = receipt;
 }
 
