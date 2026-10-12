@@ -72,9 +72,13 @@ function removeItem(id) {
   showCart();
 }
 
+function getSubtotal(item) {
+  return item.price * item.quantity;
+}
+
 function getTotal() {
   return cart.reduce(
-    (sum, item) => sum + item.price * item.quantity,
+    (sum, item) => sum + getSubtotal(item),
     0
   );
 }
@@ -94,7 +98,7 @@ function showCart() {
     const label = document.createElement("span");
     label.textContent =
       `${item.name} | ${peso(item.price)} × ${item.quantity} = ` +
-      peso(item.price * item.quantity);
+      peso(getSubtotal(item));
 
     const controls = document.createElement("div");
 
