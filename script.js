@@ -153,14 +153,28 @@ function confirmPayment() {
     return;
   }
 
+ 
   if (cash < 0) {
     message.textContent = "Payment cannot be negative.";
+    return;
+  }
+
+  // Prevent payment amounts that are too large.
+  if (!Number.isSafeInteger(Math.round(cash * 100))) {
+    message.textContent = "Payment amount is too large.";
+    return;
+  }
+
+  // Allow only two decimal places.
+  if (Math.abs(cash * 100 - Math.round(cash * 100)) > 0.000001) {
+    message.textContent = "Use a maximum of two decimal places.";
     return;
   }
 
   // Round to cents to avoid floating-point errors.
   const cashCents = Math.round(cash * 100);
   const totalCents = Math.round(total * 100);
+
 
   if (cashCents < totalCents) {
     message.textContent = "Insufficient payment.";
